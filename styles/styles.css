@@ -442,6 +442,48 @@ header {
   right: 0;
 }
 
+.headerContact {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../under-the-sea-assets/contact-header.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../under-the-sea-assets/contact-header.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+}
+.headerContact h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contactMain {
+  background-color: #0c1423;
+  padding: 160px 0;
+}
+.contactMain .contactInfo p {
+  margin: 0;
+}
+
+.headerBlog {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../under-the-sea-assets/blog-header.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../under-the-sea-assets/blog-header.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+}
+.headerBlog h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 nav {
   padding: 0 0 70px 0;
 }
@@ -702,4 +744,95 @@ footer p {
   color: #0c1423;
   padding: 8px 0;
   margin: 0;
+}
+
+.blogTitle {
+  position: relative;
+}
+
+.blog {
+  background-color: #0c1423;
+  padding: 80px 0;
+}
+
+.blogContent {
+  position: relative;
+}
+
+.blogContent .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 45px;
+}
+.blogContent .wrapper ul {
+  font-size: 1rem;
+  list-style: disc;
+  text-transform: none;
+}
+
+.rightBlogContainer {
+  width: 65%;
+}
+.rightBlogContainer .rightBlogImg {
+  position: absolute;
+  width: 55%;
+  right: 0;
+  top: -445px;
+  z-index: 50;
+}
+
+article {
+  border-left: 2px solid #86e0f9;
+  border-bottom: 2px solid #86e0f9;
+  position: relative;
+  padding: 30px 0 30px 30px;
+  margin-top: 80px;
+}
+article h3 {
+  text-align: left;
+}
+
+article::before {
+  content: "";
+  height: 400px;
+  width: 110%;
+  position: absolute;
+  background-color: #86e0f9;
+  z-index: 10;
+  top: -390px;
+  left: -2px;
+}
+
+.asideContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+}
+.asideContent .asideSpace {
+  height: 430px;
+  background-color: #0f614e;
+  padding: 30px;
+}
+.asideContent .asideSpace .asideImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 37%;
+}
+.asideContent aside {
+  background-color: #0f614e;
+  padding: 30px;
+}
+
+.commentsForm {
+  padding: 30px;
+}
+.commentsForm h3 {
+  text-align: left;
 }

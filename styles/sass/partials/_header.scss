@@ -53,3 +53,41 @@ header {
     right: 0;
   }
 }
+
+// contact header
+
+.headerContact {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../under-the-sea-assets/contact-header.jpg);
+
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.contactMain {
+  background-color: $darkBlue;
+  padding: 160px 0;
+  .contactInfo {
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.headerBlog {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../under-the-sea-assets/blog-header.jpg);
+
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
