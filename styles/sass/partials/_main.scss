@@ -1,0 +1,194 @@
+// About
+
+.about {
+  background-color: $darkBlue;
+  padding: 170px 0;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin: 30px 0;
+      width: 80%;
+      text-align: left;
+    }
+  }
+}
+
+// Info
+
+.info {
+  background-color: $spruce;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.infoTop,
+.infoBottom {
+  position: relative;
+  padding: 30px 0;
+}
+
+.infoTop .wrapper,
+.infoBottom .wrapper {
+  display: flex;
+  height: 300px;
+  gap: 100px;
+}
+
+.infoTop .wrapper > *,
+.infoBottom .wrapper > * {
+  width: calc(100% / 2);
+}
+
+.infoLeftText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.infoRightText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.leftImgContainer,
+.rightImgContainer {
+  width: 50%;
+  background-color: red;
+}
+
+.leftImg {
+  left: 0;
+  bottom: 30px;
+  z-index: 10;
+  position: absolute;
+  width: 43%;
+}
+.rightImg {
+  // right: -1;
+  top: -30px;
+  right: 0;
+  z-index: 10;
+  position: absolute;
+  width: 43%;
+}
+
+// Middle Navigation
+
+.middleNav {
+  background-color: $darkBlue;
+
+  .wrapper {
+    padding: 80px 0 60px 0;
+
+    span {
+      background-color: $robinBlue;
+      color: $darkBlue;
+      display: inline-block;
+      border-radius: 50%;
+      margin-right: 30px;
+      text-align: center;
+
+      .fa-solid {
+        padding: 10px;
+        font-size: 1.2rem;
+      }
+      .icons {
+        padding: 10px 13px;
+      }
+    }
+  }
+}
+
+.middleNav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+
+  li {
+    width: calc((100% / 2) - 25px);
+    display: flex;
+    align-items: flex-start;
+
+    div {
+    }
+  }
+}
+
+// Profile
+
+.bgImg {
+  background-image: url(../under-the-sea-assets/banner.jpg);
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// ATTENTION: ADD BACKGROUND
+.profileImgContainer {
+  width: 30%;
+  background-color: $robinBlue;
+}
+
+.profileImg {
+  width: 40%;
+}
+// attention: ADD BACKGROUND
+
+.profile {
+  background-color: $darkBlue;
+}
+
+.profile .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  gap: 30px;
+}
+
+.profileContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 70%;
+}
+
+// Gallery
+
+.gallery {
+  background-color: $spruce;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 0;
+  }
+}
+
+// Footer
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $robinBlue;
+  p {
+    color: $darkBlue;
+    padding: 8px 0;
+    margin: 0;
+  }
+}

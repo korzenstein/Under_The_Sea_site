@@ -5,17 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Under the Sea</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/17c1db0002.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="headerHome">
       <div class="wrapper">
         <nav>
           <ul>
-            <li><a href="#"></a> Home</li>
-            <li><a href="#about"></a>About</li>
-            <li><a href="./blog.html"></a>Blog</li>
-            <li><a href="./contact.html"></a>Contact</li>
+            <li>
+              <h5><a href="#">Home</a></h5>
+            </li>
+            <li>
+              <h5><a href="#about">About</a></h5>
+            </li>
+            <li>
+              <h5>
+                <a href="./blog.html">Blog</a>
+              </h5>
+            </li>
+            <li>
+              <h5>
+                <a href="./contact.html">Contact </a>
+              </h5>
+            </li>
           </ul>
         </nav>
       </div>
@@ -39,14 +62,14 @@
     <main>
       <section id="about" class="about">
         <div class="wrapper">
-          <h2>What is under the sea?</h2>
+          <h3>What is under the sea?</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             perferendis blanditiis praesentium dolorum iure vel explicabo cumque
             aliquam aperiam vero beatae non qui, ratione ad voluptatibus
             accusantium ea perspiciatis minima?
           </p>
-          <button>Find Out More</button>
+          <button class="findOut">Find Out More</button>
         </div>
       </section>
       <section id="info" class="info">
@@ -64,7 +87,7 @@
                 nulla est harum nesciunt temporibus facere nemo sit ut
                 accusamus, similique optio quis cum incidunt.
               </p>
-              <button>Read More</button>
+              <button class="readMore">Read More</button>
             </div>
           </div>
         </div>
@@ -77,7 +100,7 @@
                 nulla est harum nesciunt temporibus facere nemo sit ut
                 accusamus, similique optio quis cum incidunt.
               </p>
-              <button>Read More</button>
+              <button class="readMore">Read More</button>
             </div>
             <div class="rightImgContainer">
               <div class="rightImg">
@@ -87,44 +110,60 @@
           </div>
         </div>
       </section>
+
+      <!-- Middle Navigation -->
       <section id="middleNav" class="middleNav">
         <nav class="wrapper">
           <ul>
             <li>
-              <h4><a href="#">Locations</a></h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cupiditate neque vitae ut nobis id labore doloribus placeat
-                reprehenderit perspiciatis.
-              </p>
+              <span><i class="fa-solid fa-location-arrow icons"></i></span>
+              <div>
+                <h4><a href="#">Locations</a></h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Cupiditate neque vitae ut nobis id labore doloribus placeat
+                  reprehenderit perspiciatis.
+                </p>
+              </div>
             </li>
             <li>
-              <h4><a href="#">Community</a></h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cupiditate neque vitae ut nobis id labore doloribus placeat
-                reprehenderit perspiciatis.
-              </p>
+              <span><i class="fa-solid fa-users"></i></span>
+              <div>
+                <h4><a href="#">Community</a></h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Cupiditate neque vitae ut nobis id labore doloribus placeat
+                  reprehenderit perspiciatis.
+                </p>
+              </div>
             </li>
             <li>
-              <h4><a href="./blog.html">Blog</a></h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cupiditate neque vitae ut nobis id labore doloribus placeat
-                reprehenderit perspiciatis.
-              </p>
+              <span><i class="fa-solid fa-file icons"></i></span>
+              <div>
+                <h4><a href="./blog.html">Blog</a></h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Cupiditate neque vitae ut nobis id labore doloribus placeat
+                  reprehenderit perspiciatis.
+                </p>
+              </div>
             </li>
             <li>
-              <h4><a href="./contact.html">Get in Touch</a></h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cupiditate neque vitae ut nobis id labore doloribus placeat
-                reprehenderit perspiciatis.
-              </p>
+              <span><i class="fa-solid fa-phone-flip"></i></span>
+              <div>
+                <h4><a href="./contact.html">Get in Touch</a></h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Cupiditate neque vitae ut nobis id labore doloribus placeat
+                  reprehenderit perspiciatis.
+                </p>
+              </div>
             </li>
           </ul>
         </nav>
       </section>
+
+      <!-- Profile -->
       <section class="profile">
         <div class="bgImg"></div>
         <div class="wrapper">
@@ -137,14 +176,14 @@
             </div>
           </div>
           <div class="profileContent">
-            <h4>This Month Profile</h4>
+            <h3>This Month Profile</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
               dolores iste perspiciatis, natus nostrum sit, blanditiis similique
               iure beatae est architecto nulla laborum nesciunt, excepturi
               eligendi dolorum culpa quia eum.
             </p>
-            <button>Find Out More</button>
+            <button class="findOut">Find Out More</button>
           </div>
         </div>
       </section>

@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.headerHome {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../under-the-sea-assets/header-image.jpg);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContent {
+  position: relative;
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .headerTitle {
+      width: 45%;
+      font-size: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      h1 span {
+        display: block;
+      }
+    }
+  }
+}
+
+.headerImgContainer {
+  width: 55%;
+  display: inline-block;
+
+  .headerImg {
+    width: 55%;
+    position: absolute;
+    right: 0;
+  }
+}
