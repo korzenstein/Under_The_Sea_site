@@ -330,6 +330,22 @@ p {
   line-height: 1.6rem;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 80%;
+}
+
 button {
   font-size: 1rem;
   line-height: 1.6rem;
@@ -352,20 +368,10 @@ button {
   padding: 12px 30px;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 80%;
+.submit {
+  background-color: #0c1423;
+  color: #ffffff;
+  padding: 5px 0;
 }
 
 body {
@@ -843,6 +849,62 @@ footer p {
 }
 .commentsForm h3 {
   text-align: left;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+form span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+form span input {
+  background-color: transparent;
+  width: 50%;
+  border: none;
+  border-bottom: 1px #86e0f9 solid;
+  font-family: "Lato";
+}
+form textarea {
+  background-color: transparent;
+  border: 1px #86e0f9 solid;
+  margin: 40px 0;
+  font-family: "Lato";
+}
+form ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+form ::-moz-placeholder {
+  color: #ffffff;
+}
+form :-ms-input-placeholder {
+  color: #ffffff;
+}
+form ::-ms-input-placeholder {
+  color: #ffffff;
+}
+form ::placeholder {
+  color: #ffffff;
+}
+
+.formContainer {
+  width: 64%;
+  padding-top: 70%;
+  padding: 80px 50px 50px 50px;
+  background-color: #0f614e;
+  position: absolute;
+  right: 60px;
+  top: 330px;
+  z-index: 20;
 }
 
 .contactMain {

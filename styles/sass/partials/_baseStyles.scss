@@ -66,6 +66,23 @@ p {
   line-height: 1.6rem;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 80%;
+}
+
+// button styles
 button {
   font-size: 1rem;
   line-height: 1.6rem;
@@ -87,19 +104,8 @@ button {
   color: inherit;
   padding: 12px 30px;
 }
-
-img {
-  display: block;
-  width: 100%;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 80%;
+.submit {
+  background-color: $darkBlue;
+  color: $white;
+  padding: 5px 0;
 }

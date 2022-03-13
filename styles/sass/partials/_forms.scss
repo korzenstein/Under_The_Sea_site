@@ -1,0 +1,38 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  span {
+    display: flex;
+    gap: 30px;
+    input {
+      background-color: transparent;
+      width: 50%;
+      border: none;
+      border-bottom: 1px $robinBlue solid;
+      font-family: "Lato";
+    }
+  }
+
+  textarea {
+    background-color: transparent;
+    border: 1px $robinBlue solid;
+    margin: 40px 0;
+    font-family: "Lato";
+  }
+  ::placeholder {
+    color: $white;
+  }
+}
+
+.formContainer {
+  width: 64%;
+  padding-top: 70%;
+  padding: 80px 50px 50px 50px;
+  background-color: $spruce;
+  position: absolute;
+  right: 60px;
+  top: 330px;
+  z-index: 20;
+}
