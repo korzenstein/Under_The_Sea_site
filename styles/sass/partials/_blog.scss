@@ -1,3 +1,5 @@
+// Blog page
+
 .blogTitle {
   position: relative;
 }
@@ -9,6 +11,13 @@
 
 .blogContent {
   position: relative;
+  .rightBlogImg {
+    position: absolute;
+    width: 57%;
+    right: 0;
+    top: -300px;
+    z-index: 50;
+  }
 }
 
 .blogContent .wrapper {
@@ -16,63 +25,72 @@
   gap: 45px;
 
   ul {
-    font-size: 1rem;
     list-style: disc;
-    text-transform: none;
-  }
-}
-.rightBlogContainer {
-  width: 65%;
-  .rightBlogImg {
-    position: absolute;
-    width: 55%;
-    right: 0;
-    top: -445px;
-    z-index: 50;
+    padding-left: 1rem;
   }
 }
 
-article {
-  border-left: 2px solid $robinBlue;
-  border-bottom: 2px solid $robinBlue;
-  position: relative;
-  padding: 30px 0 30px 30px;
-  margin-top: 80px;
-  h3 {
-    text-align: left;
-  }
-}
-article::before {
-  content: "";
-  height: 400px;
-  width: 110%;
-  position: absolute;
-  background-color: $robinBlue;
-  z-index: 10;
-  top: -390px;
-  left: -2px;
-}
+// Aside
 
 .asideContent {
-  display: flex;
-  flex-direction: column;
+  //   display: flex;
+  //   flex-direction: column;
   width: 35%;
   .asideSpace {
-    height: 430px;
+    margin-top: 1rem;
+    // height: 360px;
+    padding-top: 100%;
     background-color: $spruce;
-    padding: 30px;
+    background-size: cover;
+    width: 100%;
+    object-fit: cover;
+    display: block;
 
     .asideImg {
       position: absolute;
       left: 0;
       top: 0;
-      width: 37%;
+      width: 35%;
+      //   min-width: 20rem;
     }
   }
-
   aside {
     background-color: $spruce;
     padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+// Right side / Article
+.rightBlogContainer {
+  width: 65%;
+  margin-top: 230px;
+  article {
+    border-left: 2px solid $robinBlue;
+    border-bottom: 2px solid $robinBlue;
+    position: relative;
+    padding: 30px 0 35px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h3 {
+      text-align: left;
+    }
+  }
+  article::before {
+    content: "";
+    height: 24rem;
+    // padding-top: 76%;
+    width: 115%;
+    position: absolute;
+    background-color: $robinBlue;
+    background-size: cover;
+    z-index: 10;
+    left: -2px;
+    top: -480px;
   }
 }
 
