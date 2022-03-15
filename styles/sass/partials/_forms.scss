@@ -12,6 +12,7 @@ form {
       border: none;
       border-bottom: 1px $robinBlue solid;
       font-family: "Lato";
+      padding: 15px;
     }
   }
 
@@ -23,6 +24,7 @@ form {
   }
   ::placeholder {
     color: $white;
+    padding: 15px;
   }
 }
 

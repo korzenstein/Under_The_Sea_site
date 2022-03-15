@@ -27,7 +27,7 @@
               <h5><a href="./index.html">Home</a></h5>
             </li>
             <li>
-              <h5><a href="#about">About</a></h5>
+              <h5><a href="./index.html#about">About</a></h5>
             </li>
             <li>
               <h5>
@@ -65,24 +65,25 @@
               </div>
             </div>
             <aside>
-              <h4>About Under the Sea</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae voluptatibus natus nisi a amet hic.
-              </p>
-              <h4>Recent Posts</h4>
-              <ul>
-                <li><p>Lorem ipsum dolor sit</p></li>
-                <li><p>Consectetur adipisicing</p></li>
-                <li><p>Voluptatibus natus nisi</p></li>
-                <li><p>Adipisicing elit molestiae</p></li>
-              </ul>
+              <div class="asideTop">
+                <h4>About Under the Sea</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing Molestiae
+                  voluptatibu. Find out more.
+                </p>
+              </div>
+              <div class="asideBottom">
+                <h4>Recent Posts</h4>
+                <ul>
+                  <li><p>Lorem ipsum dolor sit</p></li>
+                  <li><p>Consectetur adipisicing</p></li>
+                  <li><p>Voluptatibus natus nisi</p></li>
+                  <li><p>Adipisicing elit molestiae</p></li>
+                </ul>
+              </div>
             </aside>
           </div>
           <div class="rightBlogContainer">
-            <!-- <div class="rightBlogImg">
-              <img src="../under-the-sea-assets/blog-post-image.jpg" alt="" />
-            </div> -->
             <article>
               <h3>Discovering new species</h3>
               <p>Monday May 4, 2021</p>
@@ -97,39 +98,81 @@
                 sed in! Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Iste harum sint enim ex. Dignissimos, ipsum tempore. Voluptas,
                 assumenda amet doloremque magnam iusto deleniti, totam sed non
-                dolor perspiciatis labore ipsam!
+                dolor perspiciatis labore ipsam. Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Harum, architecto dicta natus
+                alias est velit minus mollitia repellat, eligendi quae amet
+                sapiente magnam? Rem, nihil dolorem. Quas quia quis officiis.
+                Sed, consectetur! Aut possimus dolore eos? Saepe tenetur
+                voluptatem voluptatibus dolor? Ullam officiis quam ad quaerat
+                autem enim consectetur ab sed in! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Iste harum sint enim ex.
+                Dignissimos, ipsum tempore. Voluptas, assumenda amet doloremque
+                magnam iusto deleniti, totam sed non dolor perspiciatis labore
+                ipsam. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Harum, architecto dicta natus alias est velit minus mollitia
+                repellat, eligendi quae amet sapiente magnam? dolorem. <br />
+                Quas quia quis officiis. Harum, architecto dicta natus alias est
+                velit minus mollitia repellat, eligendi quae amet sapiente
+                magnam? Rem, nihil dolorem. Quas quia quis officiis.
               </p>
             </article>
             <div class="commentsForm">
               <div class="commentsContainer">
-                <h3>Comments</h3>
+                <h3>Comments:</h3>
                 <div class="comments">
-                  <div><img src="" alt="" /></div>
+                  <div class="commenterImg">
+                    <img
+                      src="../under-the-sea-assets/comment-1.jpg"
+                      alt="Portait of Linda"
+                    />
+                  </div>
                   <div class="commentNotes">
                     <p>Tuesday October 9, 2021 by Linda</p>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Minima rem voluptate iure harum doloremque nesciunt sit
-                      voluptates accusamus saepe magni, quae fuga neque facilis
-                      similique atque aperiam sed.
+                      voluptates accusamus saepe magni, quae fuga neque facil.
                     </p>
                   </div>
                 </div>
                 <div class="comments">
-                  <div><img src="" alt="" /></div>
+                  <div class="commenterImg">
+                    <img
+                      src="../under-the-sea-assets/comment-2.jpg"
+                      alt="Portait of Sally"
+                    />
+                  </div>
                   <div class="commentNotes">
                     <p>Wednesday October 10, 2021 by Sally</p>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Minima rem voluptate iure harum doloremque nesciunt sit
-                      voluptates accusamus saepe magni, quae fuga neque facilis
-                      similique atque aperiam sed.
+                      voluptates accusamus saepe magni, quae fuga neque fa.
                     </p>
                   </div>
                 </div>
               </div>
-              <form action="">
-                <button>Post Comment</button>
+              <form
+                action="#"
+                method="POST"
+                class="contactForm"
+                name="contactForm"
+              >
+                <span>
+                  <label class="sr-only" for="name">Name</label>
+                  <input placeholder="Name" id="name" type="text" />
+
+                  <label class="sr-only" for="email">Email</label>
+                  <input placeholder="Email address" id="email" type="email" />
+                </span>
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <button class="submit">Post Comment</button>
               </form>
             </div>
           </div>

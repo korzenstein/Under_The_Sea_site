@@ -1,0 +1,62 @@
+// Media queries
+
+// Desktop and laptop screens 940px
+
+@media (max-width: 940px) {
+  .rightBlogContainer article::before {
+    top: -400px;
+    height: 60vh;
+    width: 80vh;
+  }
+}
+
+/* Tablets and small desktops/laptops 768px */
+
+@media (max-width: 768px) {
+  .blogContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blogContent .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .blogContent .rightBlogImg {
+    width: 78%;
+    position: static;
+    z-index: 100;
+  }
+  .rightBlogContainer {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .rightBlogContainer article::before {
+    display: none;
+  }
+
+  .asideContent {
+    width: 100%;
+    .asideSpace {
+      display: none;
+    }
+  }
+}
+
+/* Tablet 640px */
+
+@media (max-width: 640px) {
+}
+
+/* Mobile devices 480px */
+
+@media (max-width: 480px) {
+}
+
+/* Mobile devices 320px */
+
+@media (max-width: 320px) {
+}

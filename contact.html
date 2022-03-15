@@ -27,7 +27,7 @@
               <h5><a href="./index.html">Home</a></h5>
             </li>
             <li>
-              <h5><a href="#about">About</a></h5>
+              <h5><a href="./index.html#about">About</a></h5>
             </li>
             <li>
               <h5>
@@ -50,7 +50,7 @@
     <main>
       <section class="contactMain">
         <div class="formContainer">
-          <form action="#">
+          <form action="#" method="POST" class="contactForm" name="contactForm">
             <span>
               <label class="sr-only" for="name">Name</label>
               <input placeholder="Name" id="name" type="text" />
@@ -72,17 +72,21 @@
           <div class="contactInfo">
             <div class="contactIcons">
               <a href="https://www.facebook.com/"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
+                ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+                ><span class="sr-only">Link to Facebook</span>
+              </a>
               <a href="https://www.instagram.com/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
+                ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+                ><span class="sr-only">Link to Instagram</span>
+              </a>
               <a href="https://www.twitter.com/"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
+                ><i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Link to Twitter</span></a
+              >
               <a href="https://www.whatsapp.com/"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
+                ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i
+                ><span class="sr-only">Link to Whatsapp</span>
+              </a>
             </div>
             <h4>info@email.com</h4>
             <div>
