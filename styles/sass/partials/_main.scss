@@ -24,7 +24,7 @@
   background-color: $spruce;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 50px;
 }
 
 .infoTop,
@@ -62,23 +62,49 @@
 .leftImgContainer,
 .rightImgContainer {
   width: 50%;
-  background-color: red;
 }
 
 .leftImg {
   left: 0;
-  bottom: 30px;
-  z-index: 10;
+  bottom: 65px;
+  z-index: 20;
   position: absolute;
   width: 43%;
+  min-width: 420px;
 }
+
+.infoTop::before {
+  content: "";
+  width: 43%;
+  background-color: $robinBlue;
+  height: 47vh;
+  z-index: 0;
+  left: 30px;
+  top: 0;
+  position: absolute;
+}
+
+.infoBottom::after {
+  content: "";
+  width: 43%;
+  background-color: $robinBlue;
+  height: 47vh;
+  z-index: 0;
+  right: 30px;
+  bottom: -90px;
+  position: absolute;
+  display: block;
+}
+
 .rightImg {
-  // right: -1;
-  top: -30px;
+  top: 65px;
   right: 0;
-  z-index: 10;
+  z-index: 20;
   position: absolute;
   width: 43%;
+  min-width: 420px;
+}
+.rightImg::before {
 }
 
 // Middle Navigation
@@ -128,43 +154,54 @@
 
 // Profile
 
-.bgImg {
-  background-image: url(../under-the-sea-assets/banner.jpg);
-  height: 60vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-// ATTENTION: ADD BACKGROUND
-.profileImgContainer {
-  width: 30%;
-  background-color: $robinBlue;
-}
-
-.profileImg {
-  width: 40%;
-}
-// attention: ADD BACKGROUND
-
 .profile {
   background-color: $darkBlue;
-}
+  .bgImg {
+    background-image: url(../under-the-sea-assets/banner.jpg);
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    gap: 40px;
 
-.profile .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 0;
-  gap: 30px;
-}
-
-.profileContent {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 70%;
+    .profileImgContainer {
+      width: 30vh;
+      position: relative;
+      height: 30vh;
+      .profileImg {
+        width: 85%;
+        height: 85%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+      }
+    }
+    .profileImgContainer::before {
+      content: "";
+      background-color: $robinBlue;
+      position: absolute;
+      width: 85%;
+      height: 85%;
+      display: block;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+    }
+    .profileContent {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 70%;
+    }
+  }
 }
 
 // Gallery

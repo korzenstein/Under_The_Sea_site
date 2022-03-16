@@ -8,11 +8,71 @@
     height: 60vh;
     width: 80vh;
   }
+
+  .info {
+    gap: 300px;
+  }
+  .infoTop::before {
+    height: 32vh;
+    left: 100px;
+  }
+
+  .infoBottom::after {
+    height: 32vh;
+    right: 200px;
+  }
+
+  .infoTop .wrapper,
+  .infoBottom .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoTop .wrapper > *,
+  .infoBottom .wrapper > * {
+    width: 80%;
+  }
+
+  .leftImgContainer {
+    position: relative;
+    .leftImg {
+      position: relative;
+      bottom: -40px;
+    }
+  }
+
+  .rightImgContainer {
+    position: relative;
+    .rightImg {
+      position: relative;
+      top: -40px;
+    }
+  }
+
+  .middleNav .wrapper {
+    padding-top: 300px;
+  }
 }
 
 /* Tablets and small desktops/laptops 768px */
 
 @media (max-width: 768px) {
+  // Home page
+
+  .nav {
+  }
+  .headerHome {
+    .headerImg {
+      min-width: 230px;
+      bottom: -140px;
+    }
+  }
+
+  .about {
+  }
+
+  // Blog
   .blogContent {
     display: flex;
     flex-direction: column;
@@ -49,11 +109,96 @@
 /* Tablet 640px */
 
 @media (max-width: 640px) {
+  .middleNav {
+    .wrapper {
+      padding-top: 140px;
+      ul li {
+        width: 100%;
+      }
+    }
+  }
+
+  .profile .wrapper {
+    flex-direction: column;
+    padding: 80px 0;
+    .profileContent {
+      align-items: center;
+      gap: 30px;
+      width: 100%;
+    }
+  }
+
+  .gallery {
+    display: flex;
+
+    .wrapper {
+      width: 100%;
+      padding: 0;
+      gap: 0;
+      div:nth-child(3) {
+        display: none;
+      }
+
+      div {
+        width: 100%;
+        flex: 1;
+      }
+    }
+  }
 }
 
 /* Mobile devices 480px */
 
 @media (max-width: 480px) {
+  .headerHome {
+    padding-top: 60px;
+    h1 {
+      font-size: 5rem;
+    }
+    .homeNav {
+      position: fixed;
+      top: 0;
+      right: -400px;
+      z-index: 50;
+      background-color: $darkBlue;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      text-align: right;
+      padding: 0 80px;
+      transition: all 0.3s;
+      .navBarButton {
+        display: block;
+        margin-top: 60px;
+        cursor: pointer;
+      }
+      ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0;
+        font-size: 3rem;
+        line-height: 0;
+        h5 {
+          margin: 0;
+        }
+      }
+    }
+
+    .active {
+      right: 0;
+    }
+  }
+
+  .navHeaderButton {
+    display: block;
+    margin-left: auto;
+    background: transparent;
+    padding: 0;
+    color: $white;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    cursor: pointer;
+  }
 }
 
 /* Mobile devices 320px */
