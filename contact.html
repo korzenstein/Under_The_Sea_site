@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Under the Sea - Contact</title>
+    <title>Under the Sea - Contact Page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,12 +18,16 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  <!-- CONTACT PAGE HTML -->
   <body>
+    <!-- HEADER SECTION -->
     <header class="headerContact">
       <div class="wrapper">
+        <!-- NAV BUTTON on mobile -->
         <button class="navHeaderButton" onclick="navBar()">
           <i class="fa-solid fa-water"></i>
         </button>
+        <!-- NAVIGATION -->
         <nav class="nav">
           <button class="navBarButton" onclick="navBar()">
             <i class="fa-solid fa-otter"></i>
@@ -47,6 +51,7 @@
             </li>
           </ul>
         </nav>
+        <!-- end of NAVIGATION -->
       </div>
 
       <div class="wrapper">
@@ -54,13 +59,13 @@
       </div>
     </header>
     <main>
+      <!-- CONTACT FORM SECTION -->
       <section class="contactMain">
         <div class="formContainer">
           <form action="#" method="POST" class="contactForm" name="contactForm">
             <span>
               <label class="sr-only" for="name">Name</label>
               <input placeholder="Name" id="name" type="text" />
-
               <label class="sr-only" for="email">Email</label>
               <input placeholder="Email address" id="email" type="email" />
             </span>
@@ -73,10 +78,12 @@
             ></textarea>
             <button class="submit">Submit</button>
           </form>
+          <!-- end of CONTACT FORM -->
         </div>
         <div class="wrapper">
           <div class="contactInfo">
             <div class="contactIcons">
+              <!-- CONTACT ICONS -->
               <a href="https://www.facebook.com/"
                 ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
                 ><span class="sr-only">Link to Facebook</span>
@@ -94,6 +101,8 @@
                 ><span class="sr-only">Link to Whatsapp</span>
               </a>
             </div>
+            <!-- end of CONTACT ICONS -->
+            <!-- CONTACT INFO -->
             <h4>info@email.com</h4>
             <div>
               <p>123-456-789</p>
@@ -104,15 +113,17 @@
               <p>M5V2D5</p>
             </div>
           </div>
-          <div class="contactSpace">
-            <div class="contactFormBg"></div>
-          </div>
+          <div class="contactSpace"></div>
         </div>
+        <!-- end of CONTACT INFO  -->
       </section>
     </main>
+    <!-- FOOTER SECTION -->
     <footer>
       <p>2022 Copyright Juno College</p>
     </footer>
+    <!-- end of FOOTER -->
     <script src="./script/main.js"></script>
+    <!-- end of CONTACT PAGE HTML -->
   </body>
 </html>

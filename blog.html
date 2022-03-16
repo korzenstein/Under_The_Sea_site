@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Under the Sea - Blog</title>
+    <title>Under the Sea - Blog Page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,12 +18,16 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  <!-- BLOG PAGE HTML -->
   <body>
     <header class="headerBlog">
+      <!-- HEADER SECTION -->
       <div class="wrapper">
+        <!-- NAV BUTTON on mobile -->
         <button class="navHeaderButton" onclick="navBar()">
           <i class="fa-solid fa-water"></i>
         </button>
+        <!-- NAVIGATION -->
         <nav class="nav">
           <button class="navBarButton" onclick="navBar()">
             <i class="fa-solid fa-otter"></i>
@@ -47,23 +51,27 @@
             </li>
           </ul>
         </nav>
-        <!-- end of navigation -->
+        <!-- end of NAVIGATION -->
       </div>
 
       <div class="wrapper">
         <h2 class="blogTitle">Blog</h2>
       </div>
     </header>
-    <!-- end of header -->
+    <!-- end of HEADER -->
 
-    <!-- Main section begins-->
+    <!-- BLOG CONTENT -->
     <main class="blog">
       <section class="blogContent">
         <div class="wrapper">
+          <!-- ASIDE  -->
           <div class="asideContent">
             <div class="asideSpace">
               <div class="asideImg">
-                <img src="../under-the-sea-assets/side-blog-image.jpg" alt="" />
+                <img
+                  src="../under-the-sea-assets/side-blog-image.jpg"
+                  alt="Spectators observing a nurse shark in aquarium"
+                />
               </div>
             </div>
             <aside>
@@ -84,13 +92,19 @@
                 </ul>
               </div>
             </aside>
+            <!-- end of ASIDE -->
           </div>
+          <!-- RIGHT SIDE / ARTICLE, COMMENTS & FORM -->
           <div class="rightBlogContainer">
             <div class="topRightBlog">
               <div class="rightBlogImg">
-                <img src="../under-the-sea-assets/blog-post-image.jpg" alt="" />
+                <img
+                  src="../under-the-sea-assets/blog-post-image.jpg"
+                  alt="Tropical fish and coral life"
+                />
               </div>
             </div>
+            <!-- ARTICLE -->
             <article>
               <h3>Discovering new species</h3>
               <p>Monday May 4, 2021</p>
@@ -123,7 +137,11 @@
                 magnam? Rem, nihil dolorem. Quas quia quis officiis.
               </p>
             </article>
+            <!-- end of ARTICLE -->
+
+            <!-- COMMENTS AND FORM -->
             <div class="commentsForm">
+              <!-- COMMENTS -->
               <div class="commentsContainer">
                 <h3>Comments:</h3>
                 <div class="comments">
@@ -158,7 +176,9 @@
                     </p>
                   </div>
                 </div>
+                <!-- end of COMMENTS -->
               </div>
+              <!-- FORM -->
               <form
                 action="#"
                 method="POST"
@@ -181,14 +201,19 @@
                 ></textarea>
                 <button class="submit">Post Comment</button>
               </form>
+              <!-- end of FORM -->
             </div>
           </div>
         </div>
       </section>
+      <!-- end of BLOG -->
     </main>
+    <!-- FOOTER -->
     <footer>
       <p>2022 Copyright Juno College</p>
     </footer>
+    <!-- end of FOOTER -->
+
     <script src="./script/main.js"></script>
   </body>
 </html>
