@@ -614,7 +614,7 @@ nav ul {
   z-index: 20;
   position: absolute;
   width: 43%;
-  min-width: 420px;
+  min-width: 300px;
   -webkit-box-shadow: 30px 30px #86e0f9;
           box-shadow: 30px 30px #86e0f9;
 }
