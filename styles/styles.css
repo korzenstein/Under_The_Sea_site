@@ -676,6 +676,7 @@ nav ul {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+
 .profile {
   background-color: #0c1423;
 }
@@ -711,17 +712,8 @@ nav ul {
   top: 0;
   left: 0;
   z-index: 20;
-}
-.profile .wrapper .profileImgContainer::before {
-  content: "";
-  background-color: #86e0f9;
-  position: absolute;
-  width: 85%;
-  height: 85%;
-  display: block;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
+  -webkit-box-shadow: 30px 30px #86e0f9;
+          box-shadow: 30px 30px #86e0f9;
 }
 .profile .wrapper .profileContent {
   display: -webkit-box;
@@ -971,8 +963,8 @@ form ::placeholder {
   right: 60px;
   top: 330px;
   z-index: 20;
-  -webkit-box-shadow: -30px 30px #86e0f9;
-          box-shadow: -30px 30px #86e0f9;
+  -webkit-box-shadow: -1.4rem 1.4rem #86e0f9;
+          box-shadow: -1.4rem 1.4rem #86e0f9;
 }
 
 .contactMain {
@@ -1233,7 +1225,7 @@ form ::placeholder {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: right;
-    padding: 0 80px;
+    padding: 0 50px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
@@ -1241,6 +1233,9 @@ form ::placeholder {
     display: block;
     margin-top: 60px;
     cursor: pointer;
+    font-size: 2.3rem;
+    color: #ffffff;
+    background: transparent;
   }
   .nav ul {
     -webkit-box-orient: vertical;
@@ -1257,6 +1252,9 @@ form ::placeholder {
   .nav ul h5 {
     margin: 0;
   }
+  .nav ul h5 a {
+    font-size: 2rem;
+  }
 
   .active {
     right: 0;
@@ -1268,31 +1266,44 @@ form ::placeholder {
     background: transparent;
     padding: 0;
     color: #ffffff;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-bottom: 60px;
     cursor: pointer;
   }
-}
-.rightBlogImg {
-  z-index: 10;
-}
-.rightBlogImg img {
-  z-index: 40;
-}
 
-.rightBlogContainer article {
-  padding: 25px 0 25px 15px;
-}
+  .blog h3 {
+    font-size: 1.4rem;
+  }
 
-.commentsForm {
-  padding: 40px 25px 25px 10px;
-}
-.commentsForm .commentsContainer .comments {
-  gap: 18px;
-}
+  .rightBlogImg {
+    z-index: 10;
+  }
+  .rightBlogImg img {
+    z-index: 40;
+  }
 
-textarea {
-  height: 150px;
-}
+  .rightBlogContainer article {
+    padding: 25px 0 25px 15px;
+  }
 
+  .commentsForm {
+    padding: 40px 25px 25px 10px;
+  }
+  .commentsForm .commentsContainer .comments {
+    gap: 18px;
+  }
+
+  .contactMain {
+    padding: 40px 0;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  .formContainer {
+    -webkit-box-shadow: -0.5rem 0.5rem #86e0f9;
+            box-shadow: -0.5rem 0.5rem #86e0f9;
+  }
+}
 /* Mobile devices 320px */

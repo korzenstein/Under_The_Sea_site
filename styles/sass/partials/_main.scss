@@ -123,9 +123,6 @@
     width: calc((100% / 2) - 25px);
     display: flex;
     align-items: flex-start;
-
-    div {
-    }
   }
 }
 
@@ -158,19 +155,10 @@
         top: 0;
         left: 0;
         z-index: 20;
+        box-shadow: 30px 30px $robinBlue;
       }
     }
-    .profileImgContainer::before {
-      content: "";
-      background-color: $robinBlue;
-      position: absolute;
-      width: 85%;
-      height: 85%;
-      display: block;
-      right: 0;
-      bottom: 0;
-      z-index: 10;
-    }
+
     .profileContent {
       display: flex;
       justify-content: flex-start;
