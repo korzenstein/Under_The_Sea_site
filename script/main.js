@@ -1,5 +1,5 @@
-let homeNav = document.querySelector('.homeNav');
+let nav = document.querySelector('.nav');
 
 function navBar() {
-    homeNav.classList.toggle('active');
+    nav.classList.toggle('active');
 }

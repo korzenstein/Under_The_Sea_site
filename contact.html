@@ -21,7 +21,11 @@
   <body>
     <header class="headerContact">
       <div class="wrapper">
-        <nav>
+        <button class="navHeaderButton" onclick="navBar()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav">
+          <button class="navBarButton" onclick="navBar()">X</button>
           <ul>
             <li>
               <h5><a href="./index.html">Home</a></h5>
@@ -44,7 +48,7 @@
       </div>
 
       <div class="wrapper">
-        <h2>Get In Touch</h2>
+        <h2>Get <span>In</span> Touch</h2>
       </div>
     </header>
     <main>
@@ -91,7 +95,9 @@
             <h4>info@email.com</h4>
             <div>
               <p>123-456-789</p>
-              <p>123 Queen Street West, Unit 10</p>
+              <p>
+                123 Queen Street West,<span class="contactBreak"> Unit 10</span>
+              </p>
               <p>Toronto, Ontario</p>
               <p>M5V2D5</p>
             </div>

@@ -21,21 +21,5 @@
         font-size: 0.8rem;
       }
     }
-
-    .contactSpace {
-      background-color: $robinBlue;
-      padding-top: 20%;
-      width: 75%;
-      background-size: cover;
-      position: relative;
-      .contactFormBg {
-        background-color: $robinBlue;
-        padding-top: 70%;
-        width: 100%;
-        background-size: cover;
-        position: absolute;
-        bottom: 0;
-      }
-    }
   }
 }

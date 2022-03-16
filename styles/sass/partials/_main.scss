@@ -66,45 +66,22 @@
 
 .leftImg {
   left: 0;
-  bottom: 65px;
+  bottom: 45px;
   z-index: 20;
   position: absolute;
   width: 43%;
   min-width: 420px;
-}
-
-.infoTop::before {
-  content: "";
-  width: 43%;
-  background-color: $robinBlue;
-  height: 47vh;
-  z-index: 0;
-  left: 30px;
-  top: 0;
-  position: absolute;
-}
-
-.infoBottom::after {
-  content: "";
-  width: 43%;
-  background-color: $robinBlue;
-  height: 47vh;
-  z-index: 0;
-  right: 30px;
-  bottom: -90px;
-  position: absolute;
-  display: block;
+  box-shadow: 30px 30px $robinBlue;
 }
 
 .rightImg {
-  top: 65px;
+  top: 45px;
   right: 0;
   z-index: 20;
   position: absolute;
   width: 43%;
   min-width: 420px;
-}
-.rightImg::before {
+  box-shadow: -30px 30px $robinBlue;
 }
 
 // Middle Navigation
