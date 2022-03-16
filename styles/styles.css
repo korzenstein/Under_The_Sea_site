@@ -614,7 +614,7 @@ nav ul {
   z-index: 20;
   position: absolute;
   width: 43%;
-  min-width: 300px;
+  min-width: 270px;
   -webkit-box-shadow: 30px 30px #86e0f9;
           box-shadow: 30px 30px #86e0f9;
 }
@@ -625,7 +625,7 @@ nav ul {
   z-index: 20;
   position: absolute;
   width: 43%;
-  min-width: 420px;
+  min-width: 270px;
   -webkit-box-shadow: -30px 30px #86e0f9;
           box-shadow: -30px 30px #86e0f9;
 }
@@ -774,6 +774,7 @@ footer p {
 .blog {
   background-color: #0c1423;
   padding: 80px 0;
+  width: 100%;
 }
 .blog .submit {
   background-color: #0f614e;
@@ -784,12 +785,20 @@ footer p {
 }
 .blogContent .rightBlogImg {
   position: absolute;
-  width: 57%;
-  right: 0;
-  top: -320px;
+  width: 115%;
+  left: 35px;
+  bottom: 35px;
   z-index: 50;
   -webkit-box-shadow: -35px 35px #86e0f9;
           box-shadow: -35px 35px #86e0f9;
+}
+
+.topRightBlog {
+  width: 100%;
+  display: block;
+  background-color: #86e0f9;
+  height: 2px;
+  position: relative;
 }
 
 .blogContent .wrapper {
@@ -845,7 +854,7 @@ footer p {
 
 .rightBlogContainer {
   width: 65%;
-  margin-top: 15%;
+  margin-top: 20%;
   position: relative;
 }
 .rightBlogContainer article {
@@ -1111,11 +1120,6 @@ form ::placeholder {
         -ms-flex-align: center;
             align-items: center;
   }
-  .blogContent .rightBlogImg {
-    width: 78%;
-    position: static;
-    z-index: 100;
-  }
   .blogContent .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1125,12 +1129,18 @@ form ::placeholder {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .blogContent .rightBlogContainer {
-    width: 100%;
-    margin-top: 0;
-  }
   .blogContent .rightBlogContainer article::before {
     display: none;
+  }
+  .blogContent .rightBlogContainer {
+    width: 100%;
+    margin-top: 30%;
+  }
+  .blogContent .rightBlogContainer .rightBlogImg {
+    -webkit-box-shadow: -0.5rem 0.5rem #86e0f9;
+            box-shadow: -0.5rem 0.5rem #86e0f9;
+    bottom: 10px;
+    left: 10px;
   }
   .blogContent .asideContent {
     width: 100%;

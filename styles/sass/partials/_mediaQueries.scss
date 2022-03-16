@@ -106,21 +106,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .rightBlogImg {
-      width: 78%;
-      position: static;
-      z-index: 100;
-    }
+    // .rightBlogImg {
+    //   width: 78%;
+    //   position: static;
+    //   z-index: 100;
+    // }
     .wrapper {
       display: flex;
       flex-direction: column-reverse;
     }
-    .rightBlogContainer {
-      width: 100%;
-      margin-top: 0;
-    }
+    // .rightBlogContainer {
+    //   width: 100%;
+    //   margin-top: 0;
+    // }
     .rightBlogContainer article::before {
       display: none;
+    }
+
+    .rightBlogContainer {
+      width: 100%;
+      margin-top: 30%;
+
+      .rightBlogImg {
+        box-shadow: -0.5rem 0.5rem $robinBlue;
+        bottom: 10px;
+        left: 10px;
+      }
     }
     .asideContent {
       width: 100%;

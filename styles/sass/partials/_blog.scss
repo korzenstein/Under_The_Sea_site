@@ -7,6 +7,7 @@
 .blog {
   background-color: $darkBlue;
   padding: 80px 0;
+  width: 100%;
 
   .submit {
     background-color: $spruce;
@@ -17,12 +18,19 @@
   position: relative;
   .rightBlogImg {
     position: absolute;
-    width: 57%;
-    right: 0;
-    top: -320px;
+    width: 115%;
+    left: 35px;
+    bottom: 35px;
     z-index: 50;
     box-shadow: -35px 35px $robinBlue;
   }
+}
+.topRightBlog {
+  width: 100%;
+  display: block;
+  background-color: $robinBlue;
+  height: 2px;
+  position: relative;
 }
 
 .blogContent .wrapper {
@@ -41,7 +49,6 @@
   width: 35%;
   .asideSpace {
     margin-top: 1.5rem;
-    // height: 360px;
     padding-top: 100%;
     background-color: $spruce;
     background-size: cover;
@@ -54,7 +61,6 @@
       left: 0;
       top: 0;
       width: 35%;
-      //   min-width: 20rem;
     }
   }
   aside {
@@ -75,8 +81,7 @@
 // Right side / Article
 .rightBlogContainer {
   width: 65%;
-  // margin-top: 230px;
-  margin-top: 15%;
+  margin-top: 20%;
   position: relative;
 
   article {
@@ -92,20 +97,6 @@
       text-align: left;
     }
   }
-  // article::before {
-  //   content: "";
-  //   // width: 115%;
-  //   // width: 700px;
-  //   width: 55vw;
-  //   height: 70vh;
-  //   position: absolute;
-  //   background-color: $robinBlue;
-  //   background-size: cover;
-  //   z-index: 10;
-  //   left: -2px;
-  //   top: -440px;
-  //   display: block;
-  // }
 }
 
 .commentsForm {
