@@ -20,19 +20,6 @@
 
 // Info
 
-.info {
-  background-color: $spruce;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.infoTop,
-.infoBottom {
-  position: relative;
-  padding: 30px 0;
-}
-
 .infoTop .wrapper,
 .infoBottom .wrapper {
   display: flex;
@@ -45,43 +32,59 @@
   width: calc(100% / 2);
 }
 
-.infoLeftText {
+.info {
+  background-color: $spruce;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
+  gap: 10px;
 
-.infoRightText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
+  .infoTop {
+    position: relative;
+    padding: 25px 0;
+    .leftImgContainer {
+      width: 50%;
+      .leftImg {
+        left: 0;
+        bottom: 45px;
+        z-index: 20;
+        position: absolute;
+        width: 44%;
+        box-shadow: 2rem 2rem $robinBlue;
+      }
+    }
+    .infoRightText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
 
-.leftImgContainer,
-.rightImgContainer {
-  width: 50%;
-}
+  .infoBottom {
+    position: relative;
+    padding: 25px 0;
+    .infoLeftText {
+      text-align: right;
+    }
 
-.leftImg {
-  left: 0;
-  bottom: 45px;
-  z-index: 20;
-  position: absolute;
-  width: 43%;
-  min-width: 270px;
-  box-shadow: 30px 30px $robinBlue;
-}
-
-.rightImg {
-  top: 45px;
-  right: 0;
-  z-index: 20;
-  position: absolute;
-  width: 43%;
-  min-width: 270px;
-  box-shadow: -30px 30px $robinBlue;
+    .rightImgContainer {
+      width: 50%;
+      .rightImg {
+        top: 45px;
+        right: 0;
+        z-index: 20;
+        position: absolute;
+        width: 44%;
+        box-shadow: -2rem 2rem $robinBlue;
+      }
+    }
+    .infoLeftText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  }
 }
 
 // Middle Navigation
@@ -155,7 +158,7 @@
         top: 0;
         left: 0;
         z-index: 20;
-        box-shadow: 30px 30px $robinBlue;
+        box-shadow: 2rem 2rem $robinBlue;
       }
     }
 

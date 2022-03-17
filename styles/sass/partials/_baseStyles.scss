@@ -9,6 +9,11 @@ html {
 
 // Font Sizes changed from desing with
 // Esther's permission
+
+a {
+  transition: all 0.2s ease-in-out;
+}
+
 h1 {
   line-height: 5.7rem;
   font-size: 6rem;
@@ -51,11 +56,11 @@ h5 a {
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.2s ease-in-out;
-}
 
-h5 a:hover,
-h5 a:focus {
-  color: $robinBlue;
+  &:hover,
+  &:focus {
+    color: $robinBlue;
+  }
 }
 
 a:visited,
@@ -96,21 +101,35 @@ button {
   font-family: inherit;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 .findOut {
   background-color: $robinBlue;
   color: $darkBlue;
   padding: 12px 40px;
+  &:hover,
+  &:focus {
+    background-color: $robinBlueHover;
+  }
 }
 
 .readMore {
   background-color: $darkBlue;
   color: inherit;
   padding: 12px 30px;
+  &:hover,
+  &:focus {
+    background-color: $darkBlueHover;
+  }
 }
 .submit {
   background-color: $darkBlue;
   color: $white;
   padding: 5px 0;
+  &:hover,
+  &:focus {
+    background-color: $darkBlueHover;
+  }
 }

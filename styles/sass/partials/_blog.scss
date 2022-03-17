@@ -11,6 +11,10 @@
 
   .submit {
     background-color: $spruce;
+    &:hover,
+    &:focus {
+      background-color: $spruceHover;
+    }
   }
 }
 
