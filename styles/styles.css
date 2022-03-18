@@ -1160,6 +1160,7 @@ form ::placeholder {
   }
   .blogContent .asideContent ul {
     list-style: none;
+    padding: 0;
   }
   .blogContent .asideContent .asideSpace {
     display: none;
@@ -1283,6 +1284,10 @@ form ::placeholder {
   .formContainer {
     padding: 20px;
   }
+
+  .blogContent .rightBlogContainer {
+    margin-top: 10%;
+  }
 }
 /* Mobile devices 480px */
 @media (max-width: 480px) {
@@ -1387,7 +1392,10 @@ form ::placeholder {
     z-index: 40;
   }
 
-  .rightBlogContainer article {
+  .blogContent .rightBlogContainer {
+    margin-top: 0;
+  }
+  .blogContent .rightBlogContainer article {
     padding: 25px 0 25px 15px;
   }
 

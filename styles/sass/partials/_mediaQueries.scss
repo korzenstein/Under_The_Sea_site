@@ -120,6 +120,7 @@
       text-align: center;
       ul {
         list-style: none;
+        padding: 0;
       }
       .asideSpace {
         display: none;
@@ -231,6 +232,12 @@
   }
 
   // Blog page
+
+  .blogContent {
+    .rightBlogContainer {
+      margin-top: 10%;
+    }
+  }
 }
 
 /* Mobile devices 480px */
@@ -330,9 +337,12 @@
     }
   }
 
-  .rightBlogContainer {
-    article {
-      padding: 25px 0 25px 15px;
+  .blogContent {
+    .rightBlogContainer {
+      margin-top: 0;
+      article {
+        padding: 25px 0 25px 15px;
+      }
     }
   }
 
