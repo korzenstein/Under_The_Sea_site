@@ -2,6 +2,10 @@
 
 .blogTitle {
   position: relative;
+  font-size: 3.9rem;
+  line-height: 4.6rem;
+  margin: 0;
+  text-align: center;
 }
 
 .blog {
@@ -25,7 +29,7 @@
     width: 115%;
     left: 35px;
     bottom: 35px;
-    z-index: 50;
+    z-index: 20;
     box-shadow: -35px 35px $robinBlue;
   }
 }
@@ -51,6 +55,27 @@
 
 .asideContent {
   width: 35%;
+  aside {
+    background-color: $spruce;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .asideBottom {
+      padding-top: 50px;
+      li a {
+        font-family: "Lato";
+        padding-bottom: 15px;
+        line-height: 2rem;
+
+        &:hover,
+        &:focus {
+          color: $robinBlueHover;
+        }
+      }
+    }
+  }
   .asideSpace {
     margin-top: 1.5rem;
     padding-top: 100%;
@@ -65,20 +90,6 @@
       left: 0;
       top: 0;
       width: 35%;
-    }
-  }
-  aside {
-    background-color: $spruce;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    .asideBottom {
-      padding-top: 50px;
-    }
-    ul p {
-      margin: 1px;
     }
   }
 }

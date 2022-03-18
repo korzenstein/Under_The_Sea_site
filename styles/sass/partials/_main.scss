@@ -45,7 +45,7 @@
       width: 50%;
       .leftImg {
         left: 0;
-        bottom: 45px;
+        top: -40px;
         z-index: 20;
         position: absolute;
         width: 44%;
@@ -70,7 +70,7 @@
     .rightImgContainer {
       width: 50%;
       .rightImg {
-        top: 45px;
+        bottom: -40px;
         right: 0;
         z-index: 20;
         position: absolute;
@@ -93,7 +93,7 @@
   background-color: $darkBlue;
 
   .wrapper {
-    padding: 80px 0 60px 0;
+    padding: 140px 0 60px 0;
 
     span {
       background-color: $robinBlue;
@@ -135,7 +135,7 @@
   background-color: $darkBlue;
   .bgImg {
     background-image: url(../under-the-sea-assets/banner.jpg);
-    height: 60vh;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
