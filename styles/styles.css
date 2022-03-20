@@ -1164,6 +1164,7 @@ form ::placeholder {
             box-shadow: -0.5rem 0.5rem #86e0f9;
     bottom: 10px;
     left: 10px;
+    width: 111%;
   }
   .blogContent .asideContent {
     width: 100%;
@@ -1223,6 +1224,9 @@ form ::placeholder {
     width: 90%;
     -webkit-box-shadow: 1rem 1rem #86e0f9;
             box-shadow: 1rem 1rem #86e0f9;
+  }
+  .info .infoBottom p {
+    padding: 20px 0;
   }
   .info .infoBottom .wrapper {
     -webkit-box-orient: vertical;
@@ -1451,7 +1455,7 @@ form ::placeholder {
 /* Mobile devices 320px */
 @media (max-width: 320px) {
   .info {
-    gap: 220px;
+    gap: 250px;
   }
 
   .blog .blogContent .rightBlogContainer {
