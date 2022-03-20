@@ -1164,7 +1164,7 @@ form ::placeholder {
             box-shadow: -0.5rem 0.5rem #86e0f9;
     bottom: 10px;
     left: 10px;
-    width: 111%;
+    width: 100%;
   }
   .blogContent .asideContent {
     width: 100%;
