@@ -1,6 +1,6 @@
 // Media queries
 @media (max-width: 1220px) {
-  // Home page
+  // Home page 1220px
   .infoBottom {
     min-height: none;
   }
@@ -9,7 +9,7 @@
     min-height: none;
   }
 
-  // Contact page
+  // Contact page 1220px
   .contactBreak {
     display: block;
   }
@@ -18,17 +18,15 @@
 // Desktop and laptop screens 940px
 
 @media (max-width: 940px) {
-  // Home page
+  // Home page 940px
 
   .middleNav {
     .wrapper {
-      padding-top: 60px;
+      padding-top: 110px;
     }
   }
 
-  // Blog page
-
-  // Contact page
+  // Contact page 940px
   .contactTitle {
     span {
       display: block;
@@ -78,16 +76,16 @@
 /* Tablets and small desktops/laptops 768px */
 
 @media (max-width: 768px) {
-  // Home page
+  // Home page 768px
 
   .headerHome {
     .headerImg {
       min-width: 310px;
-      bottom: -200px;
+      bottom: -250px;
     }
   }
 
-  // Blog
+  // Blog page 768px
   .blogContent {
     display: flex;
     flex-direction: column;
@@ -143,7 +141,7 @@
 /* Tablet 640px */
 
 @media (max-width: 640px) {
-  // Home page
+  // Home page 640px
 
   .findOut,
   .readMore {
@@ -246,13 +244,13 @@
     }
   }
 
-  // Contact page
+  // Contact page 640px
 
   .formContainer {
     padding: 20px;
   }
 
-  // Blog page
+  // Blog page 640px
 
   .blogContent {
     .rightBlogContainer {
@@ -264,7 +262,7 @@
 /* Mobile devices 480px */
 
 @media (max-width: 480px) {
-  // Home page
+  // Home page 480px
 
   .headerHome {
     .headerImg {
@@ -344,7 +342,7 @@
     }
   }
 
-  // Blog page
+  // Blog page 480px
 
   .blog {
     h3 {
@@ -368,7 +366,7 @@
     }
   }
 
-  // Contact page
+  // Contact page 480px
 
   .contactMain {
     padding: 40px 0;
@@ -385,7 +383,7 @@
 
 // Mobile devices 400px
 @media (max-width: 400px) {
-  // Home page
+  // Home page 400px
   .headerHome {
     h1 {
       font-size: 4.3rem;
@@ -400,7 +398,7 @@
     }
   }
 
-  // Blog page
+  // Blog page 400px
 
   .blog {
     .blogContent {
@@ -414,12 +412,12 @@
 /* Mobile devices 320px */
 
 @media (max-width: 320px) {
-  // Home page
+  // Home page 320px
   .info {
     gap: 250px;
   }
 
-  // Blog page
+  // Blog page 320px
 
   .blog {
     .blogContent {

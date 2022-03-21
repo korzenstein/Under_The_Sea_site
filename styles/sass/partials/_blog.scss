@@ -1,4 +1,4 @@
-// Blog page
+// Blog page styles
 
 .blogTitle {
   position: relative;
@@ -24,6 +24,8 @@
 
 .blogContent {
   position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
   .rightBlogImg {
     position: absolute;
     width: 115%;
@@ -51,7 +53,7 @@
   }
 }
 
-// Aside
+// Aside section
 
 .asideContent {
   width: 35%;
@@ -126,13 +128,19 @@
       justify-content: flex-start;
       gap: 30px;
       .commenterImg {
-        width: 15%;
+        width: 20%;
       }
       .commentNotes {
         display: flex;
         flex-direction: column;
         width: 85%;
         margin-bottom: 60px;
+        blockquote {
+          font-family: "Lato", sans-serif;
+          margin: 16px 0;
+          font-size: 0.9rem;
+          line-height: 1.5rem;
+        }
         p:nth-child(1) {
           margin: 0;
           line-height: 0.9rem;

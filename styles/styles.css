@@ -269,6 +269,18 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -392,19 +404,6 @@ button {
   background-color: rgba(12, 20, 35, 0.7);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 1600px;
-}
-
 .headerHome {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../under-the-sea-assets/header-image.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../under-the-sea-assets/header-image.jpg);
@@ -424,6 +423,9 @@ body {
 
 .headerContent {
   position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
 }
 .headerContent .wrapper {
   display: -webkit-box;
@@ -581,6 +583,8 @@ nav ul {
           flex-direction: column;
 }
 .info .infoTop {
+  max-width: 1600px;
+  margin: 0 auto;
   position: relative;
   padding: 25px 0;
   min-height: 400px;
@@ -589,6 +593,7 @@ nav ul {
   width: 50%;
 }
 .info .infoTop .leftImgContainer .leftImg {
+  max-width: 450px;
   left: 0;
   top: -40px;
   z-index: 20;
@@ -613,6 +618,8 @@ nav ul {
           align-items: flex-start;
 }
 .info .infoBottom {
+  max-width: 1600px;
+  margin: 0 auto;
   position: relative;
   padding: 25px 0;
   min-height: 400px;
@@ -624,6 +631,7 @@ nav ul {
   width: 50%;
 }
 .info .infoBottom .rightImgContainer .rightImg {
+  max-width: 450px;
   bottom: -40px;
   right: 0;
   z-index: 20;
@@ -715,8 +723,8 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0;
-  gap: 40px;
+  padding: 80px 0 40px 0;
+  gap: 90px;
 }
 .profile .wrapper .profileImgContainer {
   width: 30vh;
@@ -724,8 +732,10 @@ nav ul {
   height: 30vh;
 }
 .profile .wrapper .profileImgContainer .profileImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 85%;
-  height: 85%;
   position: absolute;
   top: 0;
   left: 0;
@@ -807,6 +817,8 @@ footer p {
 
 .blogContent {
   position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .blogContent .rightBlogImg {
   position: absolute;
@@ -924,7 +936,7 @@ footer p {
   gap: 30px;
 }
 .commentsForm .commentsContainer .comments .commenterImg {
-  width: 15%;
+  width: 20%;
 }
 .commentsForm .commentsContainer .comments .commentNotes {
   display: -webkit-box;
@@ -936,6 +948,12 @@ footer p {
           flex-direction: column;
   width: 85%;
   margin-bottom: 60px;
+}
+.commentsForm .commentsContainer .comments .commentNotes blockquote {
+  font-family: "Lato", sans-serif;
+  margin: 16px 0;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 .commentsForm .commentsContainer .comments .commentNotes p:nth-child(1) {
   margin: 0;
@@ -1000,10 +1018,15 @@ form ::placeholder {
   text-align: center;
 }
 
-.contactMain {
+.mainContainer {
   background-color: #0c1423;
+}
+
+.contactMain {
+  max-width: 1600px;
   padding: 160px 0;
   position: relative;
+  margin: 0 auto;
 }
 .contactMain .formContainer {
   width: 60%;
@@ -1016,6 +1039,7 @@ form ::placeholder {
   z-index: 20;
   -webkit-box-shadow: -1.4rem 1.4rem #86e0f9;
           box-shadow: -1.4rem 1.4rem #86e0f9;
+  max-width: 800px;
 }
 .contactMain .wrapper {
   position: relative;
@@ -1054,7 +1078,7 @@ form ::placeholder {
 }
 @media (max-width: 940px) {
   .middleNav .wrapper {
-    padding-top: 60px;
+    padding-top: 110px;
   }
 
   .contactTitle span {
@@ -1113,7 +1137,7 @@ form ::placeholder {
 @media (max-width: 768px) {
   .headerHome .headerImg {
     min-width: 310px;
-    bottom: -200px;
+    bottom: -250px;
   }
 
   .blogContent {

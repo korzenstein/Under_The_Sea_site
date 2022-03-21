@@ -1,3 +1,5 @@
+// Base styles
+
 html {
   font-size: 125%;
   font-family: "Barlow", "Helvetica", sans-serif;
@@ -5,6 +7,13 @@ html {
   font-weight: 700;
   margin: 0;
   overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 // Font Sizes changed from desing with
@@ -48,7 +57,6 @@ h4 a:hover {
   color: $robinBlue;
 }
 
-// navigation
 h5 a {
   font-size: 1rem;
   line-height: 1.45;

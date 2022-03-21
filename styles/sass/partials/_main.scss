@@ -1,4 +1,6 @@
-// About
+// Home page styles
+
+// About section
 
 .about {
   background-color: $darkBlue;
@@ -18,7 +20,7 @@
   }
 }
 
-// Info
+// Info section
 
 .infoTop .wrapper,
 .infoBottom .wrapper {
@@ -36,15 +38,17 @@
   background-color: $spruce;
   display: flex;
   flex-direction: column;
-  // gap: 10px;
 
   .infoTop {
+    max-width: 1600px;
+    margin: 0 auto;
     position: relative;
     padding: 25px 0;
     min-height: 400px;
     .leftImgContainer {
       width: 50%;
       .leftImg {
+        max-width: 450px;
         left: 0;
         top: -40px;
         z-index: 20;
@@ -62,6 +66,8 @@
   }
 
   .infoBottom {
+    max-width: 1600px;
+    margin: 0 auto;
     position: relative;
     padding: 25px 0;
     min-height: 400px;
@@ -73,6 +79,7 @@
     .rightImgContainer {
       width: 50%;
       .rightImg {
+        max-width: 450px;
         bottom: -40px;
         right: 0;
         z-index: 20;
@@ -90,7 +97,7 @@
   }
 }
 
-// Middle Navigation
+// Middle Navigation section
 
 .middleNav {
   background-color: $darkBlue;
@@ -132,7 +139,7 @@
   }
 }
 
-// Profile
+// Profile section
 
 .profile {
   background-color: $darkBlue;
@@ -147,16 +154,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
-    gap: 40px;
+    padding: 80px 0 40px 0;
+    gap: 90px;
 
     .profileImgContainer {
       width: 30vh;
       position: relative;
       height: 30vh;
       .profileImg {
+        display: flex;
         width: 85%;
-        height: 85%;
         position: absolute;
         top: 0;
         left: 0;
@@ -175,7 +182,7 @@
   }
 }
 
-// Gallery
+// Gallery section
 
 .gallery {
   background-color: $spruce;
@@ -188,7 +195,7 @@
   }
 }
 
-// Footer
+// Footer section
 footer {
   display: flex;
   justify-content: center;
