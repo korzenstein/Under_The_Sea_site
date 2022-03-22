@@ -358,6 +358,14 @@ ul {
   padding: 0;
 }
 
+blockquote {
+  font-family: "Lato", sans-serif;
+  margin: 16px 0;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1280px;
@@ -405,8 +413,8 @@ button {
 }
 
 .headerHome {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../under-the-sea-assets/header-image.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../under-the-sea-assets/header-image.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../assets/header-image.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/header-image.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,8 +474,8 @@ button {
 }
 
 .headerContact {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../under-the-sea-assets/contact-header.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../under-the-sea-assets/contact-header.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../assets/contact-header.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/contact-header.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,8 +494,8 @@ button {
 }
 
 .headerBlog {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../under-the-sea-assets/blog-header.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../under-the-sea-assets/blog-header.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../assets/blog-header.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/blog-header.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,7 +715,7 @@ nav ul {
   background-color: #0c1423;
 }
 .profile .bgImg {
-  background-image: url(../under-the-sea-assets/banner.jpg);
+  background-image: url(../assets/banner.jpg);
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -948,12 +956,6 @@ footer p {
           flex-direction: column;
   width: 85%;
   margin-bottom: 60px;
-}
-.commentsForm .commentsContainer .comments .commentNotes blockquote {
-  font-family: "Lato", sans-serif;
-  margin: 16px 0;
-  font-size: 0.9rem;
-  line-height: 1.5rem;
 }
 .commentsForm .commentsContainer .comments .commentNotes p:nth-child(1) {
   margin: 0;

@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Under the Sea - Blog Page</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./under-the-sea-assets/favicon.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,12 +27,14 @@
       <div class="wrapper">
         <!-- NAV BUTTON on mobile -->
         <button class="navHeaderButton" onclick="navBar()">
-          <i class="fa-solid fa-water"></i>
+          <i aria-hidden="true" class="fa-solid fa-water"></i>
+          <span class="sr-only">tap to open menu</span>
         </button>
         <!-- NAVIGATION -->
         <nav class="nav">
           <button class="navBarButton" onclick="navBar()">
-            <i class="fa-solid fa-otter"></i>
+            <i aria-hidden="true" class="fa-solid fa-otter"></i>
+            <span class="sr-only">tap to close menu</span>
           </button>
           <ul>
             <li>
@@ -75,7 +73,7 @@
             <div class="asideSpace">
               <div class="asideImg">
                 <img
-                  src="../under-the-sea-assets/side-blog-image.jpg"
+                  src="../assets/side-blog-image.jpg"
                   alt="Spectators observing a nurse shark in aquarium"
                 />
               </div>
@@ -105,7 +103,7 @@
             <div class="topRightBlog">
               <div class="rightBlogImg">
                 <img
-                  src="../under-the-sea-assets/blog-post-image.jpg"
+                  src="../assets/blog-post-image.jpg"
                   alt="Tropical fish and coral life"
                 />
               </div>
@@ -152,10 +150,7 @@
                 <h3>Comments:</h3>
                 <div class="comments">
                   <div class="commenterImg">
-                    <img
-                      src="../under-the-sea-assets/comment-1.jpg"
-                      alt="Portait of Linda"
-                    />
+                    <img src="../assets/comment-1.jpg" alt="Portait of Linda" />
                   </div>
                   <div class="commentNotes">
                     <p>Tuesday October 9, 2021 by Linda</p>
@@ -169,10 +164,7 @@
                 </div>
                 <div class="comments">
                   <div class="commenterImg">
-                    <img
-                      src="../under-the-sea-assets/comment-2.jpg"
-                      alt="Portait of Sally"
-                    />
+                    <img src="../assets/comment-2.jpg" alt="Portait of Sally" />
                   </div>
                   <div class="commentNotes">
                     <p>Wednesday October 10, 2021 by Sally</p>
