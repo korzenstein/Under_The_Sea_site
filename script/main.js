@@ -6,18 +6,26 @@ function navBar() {
 }
 
 // Assignment 2 Functionality
+
+
+// Declare variables for DOM elements
 let commentForm = document.getElementById('commentForm');
 let commentsContainer = document.querySelector('.commentsContainer')
 
-
 // Comment Form Functionality
 commentForm.addEventListener('submit', function(event) {
-      event.preventDefault();
-
+    event.preventDefault();
     let submit = document.querySelector('.submit')
     let email = document.getElementById('email').value
     let name = document.getElementById('name').value
     let message = document.getElementById('message').value
+
+
+    // Creates our date timestamp
+    const date = `${new Date().toLocaleString("en-US", { day: "2-digit" })}`;
+    const day = `${new Date().toLocaleDateString("en-US", { weekday: 'long' })}`
+    const month = `${new Date().toLocaleString("en-US", { month: "long" })}`;
+    const year = `${new Date().getFullYear()}`;
 
     // Creates a new Li Element
     let newComment = document.createElement('li')
@@ -43,7 +51,7 @@ commentForm.addEventListener('submit', function(event) {
 
     // Creates the paragraph for it
     let para = document.createElement('p')
-    para.innerText = `Tuesday October 9, 2021 by ${name}`
+    para.innerText = `${day} ${month} ${date}, ${year} by ${name}`
 
     // Creates the blockquote for comments
     let blockquote = document.createElement('blockquote')
@@ -57,8 +65,6 @@ commentForm.addEventListener('submit', function(event) {
 
     // Places Li into Section
     commentsContainer.appendChild(newComment)    
-
-
 })
 
 console.log(commentsContainer)
