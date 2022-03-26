@@ -15,6 +15,7 @@ form {
       border-bottom: 1px $robinBlue solid;
       font-family: "Lato";
       padding: 15px;
+      color: $white;
     }
   }
 
@@ -23,6 +24,8 @@ form {
     border: 1px $robinBlue solid;
     margin: 40px 0;
     font-family: "Lato";
+    color: $white;
+    padding: 15px;
   }
   ::placeholder {
     color: $white;

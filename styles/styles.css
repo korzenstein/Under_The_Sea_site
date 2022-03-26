@@ -985,12 +985,15 @@ form span input {
   border-bottom: 1px #86e0f9 solid;
   font-family: "Lato";
   padding: 15px;
+  color: #ffffff;
 }
 form textarea {
   background-color: transparent;
   border: 1px #86e0f9 solid;
   margin: 40px 0;
   font-family: "Lato";
+  color: #ffffff;
+  padding: 15px;
 }
 form ::-webkit-input-placeholder {
   color: #ffffff;
