@@ -127,6 +127,8 @@
       display: flex;
       justify-content: flex-start;
       gap: 30px;
+      opacity: 1;
+      transition: all ease-in-out 1.2s;
       .commenterImg {
         width: 20%;
       }

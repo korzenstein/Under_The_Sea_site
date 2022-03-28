@@ -942,6 +942,9 @@ footer p {
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 30px;
+  opacity: 1;
+  -webkit-transition: all ease-in-out 1.2s;
+  transition: all ease-in-out 1.2s;
 }
 .commentsForm .commentsContainer .comments .commenterImg {
   width: 20%;
